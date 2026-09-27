@@ -10,27 +10,29 @@ import { TranslatePipe } from '@ngx-translate/core';
 })
 export class Skills {
   languages = [
-    'TypeScript',
-    'JavaScript',
-    'Java',
+    'C++',
+    'C#',
     'Python',
     'HTML',
-    'CSS'
+    'CSS',
+    'Typescript'
   ];
 
   frameworks = [
     'Angular',
-    'Spring Boot',
-    'React',
-    'Node.js'
+    '.NET Framework',
+    'Unreal Engine',
+    'Unity'
   ];
 
   tools = [
     'Git',
     'GitHub',
     'Docker',
-    'VS Code',
-    'MySQL',
-    'Postman'
+    'Perforce',
+    'SQLServer',
+    'Postman',
+    'AzureDevOps',
+    'Terraform'
   ];
 }

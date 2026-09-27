@@ -10,7 +10,7 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class Contact {
   whatsapp = '34600000000';
 
-  email = 'tuemail@gmail.com';
+  email = 'javito16102002@gmail.com';
 
-  linkedin = 'https://www.linkedin.com/in/tuusuario';
+  linkedin = 'https://www.linkedin.com/in/wilson-javier-simba%C3%B1a-ganazhapa-b4a1bb311/';
 }

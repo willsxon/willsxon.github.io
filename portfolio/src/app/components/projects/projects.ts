@@ -29,46 +29,59 @@ export class Projects {
  projects: Project[] = [
 
     {
-      id: 'ecommerce',
-      title: 'E-commerce',
-      description: 'Tienda online desarrollada con Angular.',
+      id: 'Unwoven',
+      title: 'Unwoven',
+      description: 'Twin-stick shooter desarrollado en Unreal Engine 5.',
       details:
-        'Desarrollo del frontend, autenticación, gestión de productos e integración con una API REST.',
+        '',
 
       images: [
-        'assets/projects/ecommerce-1.jpg',
-        'assets/projects/ecommerce-2.jpg',
-        'assets/projects/ecommerce-3.jpg'
+        'gameplay/gameplay1.png',
+        'gameplay/gameplay2.png'
       ],
 
-      video: 'assets/projects/ecommerce.mp4',
+      video: 'gameplay/videoGameplay.mov',
 
       technologies: [
-        'Angular',
-        'TypeScript',
-        'REST API'
+        'Unreal Engine',
+        'Jenkins'
       ],
 
-      github: 'https://github.com/tuusuario/proyecto1',
-      demo: 'https://ejemplo.com'
+      demo: 'https://store.steampowered.com/app/4551090/Unwoven/'
     },
 
     {
-      id: 'taskManager',
-      title: 'Task Manager',
-      description: 'Aplicación para gestionar tareas y proyectos.',
+      id: 'GGTrack',
+      title: 'GGTrack',
+      description: '',
       details:
-        'Backend desarrollado con Spring Boot y conexión con base de datos MySQL.',
+        '',
 
       images: [],
 
       technologies: [
-        'Java',
-        'Spring Boot',
-        'MySQL'
+        'Angular',
+        'Django',
+        'REST API'
       ],
 
-      github: 'https://github.com/tuusuario/proyecto2'
+      github: ''
+    },
+    {
+      id: 'ElonMusk',
+      title: 'ElonMusk',
+      description: '',
+      details:
+        '',
+
+      images: [],
+
+      technologies: [
+        'Unity'
+      ],
+
+      demo: 'https://davidperuchoconde.itch.io/e-mask',
+      video: 'assets/projects/ecommerce.mp4'
     }
 
   ];
