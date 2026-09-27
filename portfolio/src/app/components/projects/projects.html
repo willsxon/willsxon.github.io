@@ -101,27 +101,29 @@
           <div class="project-links">
 
             @if (project.github) {
-
               <a
                 [href]="project.github"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="project-link project-link-github"
               >
-                {{ 'portfolio.github' | translate }}
+                <span class="project-link-icon pe-1">&lt;/&gt;</span>
+                <span>{{ project.githubLabel | translate }}</span>
+                <span class="project-link-arrow">↗</span>
               </a>
-
             }
 
             @if (project.demo) {
-
               <a
                 [href]="project.demo"
                 target="_blank"
                 rel="noopener noreferrer"
+                class="project-link project-link-demo"
               >
-                {{ 'portfolio.demo' | translate }}
+                <span class="project-link-icon pe-1">▶</span>
+                <span>{{ project.demoLabel | translate }}</span>
+                <span class="project-link-arrow">↗</span>
               </a>
-
             }
 
           </div>

@@ -15,7 +15,9 @@ interface Project {
   technologies: string[];
 
   github?: string;
+  githubLabel?: string;
   demo?: string;
+  demoLabel?: string;
 }
 
 @Component({
@@ -37,7 +39,8 @@ export class Projects {
 
       images: [
         'gameplay/gameplay1.png',
-        'gameplay/gameplay2.png'
+        'gameplay/gameplay2.png',
+        'gameplay/gameplay3.png'
       ],
 
       video: 'gameplay/videoGameplay.mov',
@@ -47,7 +50,8 @@ export class Projects {
         'Jenkins'
       ],
 
-      demo: 'https://store.steampowered.com/app/4551090/Unwoven/'
+      demo: 'https://store.steampowered.com/app/4551090/Unwoven/',
+      demoLabel: 'show.steam'
     },
 
     {
@@ -65,23 +69,28 @@ export class Projects {
         'REST API'
       ],
 
-      github: ''
+      github: 'https://github.com/Willsy12/TFG',
+      githubLabel: 'show.github'
     },
     {
-      id: 'ElonMusk',
-      title: 'ElonMusk',
+      id: 'emusk',
+      title: 'emusk',
       description: '',
       details:
         '',
 
-      images: [],
+      images: [
+        'gameplay/e_mask1.png',
+        'gameplay/e_mask2.png',
+        'gameplay/e_mask3.png'],
 
       technologies: [
         'Unity'
       ],
 
       demo: 'https://davidperuchoconde.itch.io/e-mask',
-      video: 'assets/projects/ecommerce.mp4'
+      video: 'gameplay/e_mask.mov',
+      demoLabel: 'show.demo'
     }
 
   ];

@@ -8,7 +8,7 @@ import { TranslatePipe } from '@ngx-translate/core';
   templateUrl: './contact.html',
 })
 export class Contact {
-  whatsapp = '34600000000';
+  whatsapp = '34633667012';
 
   email = 'javito16102002@gmail.com';
 

@@ -27,9 +27,9 @@
   "about": {
     "sectionNumber": "01.",
     "title": "Sobre mí",
-    "intro": "Me llamo Wilson Javier Simbaña Ganazhapa. Soy desarrollador de software apasionado por el desarrollo de videojuegos y aplciaciones web",
-    "description": "Me gusta transformar ideas en soluciones digitales funcionales, intuitivas y bien estructuradas. Disfruto aprendiendo nuevas tecnologías y mejorando continuamente mis habilidades.",
-    "description2": "Actualmente trabajo en proyectos relacionados con el desarrollo web y de software, prestando especial atención a la calidad del código, la experiencia de usuario y las buenas prácticas.",
+    "intro": "Me llamo Wilson Javier Simbaña Ganazhapa. Soy desarrollador de software apasionado por el desarrollo de videojuegos y aplicaciones web.",
+    "description": "Me considero una persona curiosa a la que le gusta entender cómo funcionan las cosas y enfrentarse a nuevos retos.",
+    "description2": "Actualmente trabajo en proyectos relacionados con el desarrollo web y de software utilizando tecnologías como Angular y .NET. Además del desarrollo web, he participado en proyectos de videojuegos utilizando motores como Unreal Engine y Unity, experiencias que me han permitido desarrollar una visión más creativa y diferente sobre la programación.",
     "age": "24 años",
     "location": "Madrid, España",
     "company": "Nombre de empresa",
@@ -58,19 +58,19 @@
     "Unwoven": {
       "title": "Unwoven",
       "description": "Twin-stick shooter de accion publicado en Steam",
-      "details": "Trabajo de fin de master, desarrollado en Unreal Engine. Mis labores en este proyecto fueron: la realización de un proceso de automatización de ejecutables del juego, implementación de habilidades del personaje, implementación del sistema de animaciones, implementación de un shader circular, optimización de recursos"
+      "details": "Trabajo de fin de master, desarrollado en Unreal Engine. Mis principales responsabilidades fueron la automatización del proceso de generación de ejecutables, la implementación de las habilidades y el movimiento del personaje, el desarrollo del sistema de animaciones, la creación de un shader circular y la optimización de recursos."
     },
 
-    "ElonMusk": {
-      "title": "ElonMusk",
-      "description": "",
-      "details": "Proyecto desarrollado durante la Madrid Global Gamejam 2026. Mis labores en este proyecto fueron: implementación de la cámra y movimiento del personaje, implementación del HUD y textos explicativos en el HUD"
+    "emusk": {
+      "title": "E-mask",
+      "description": "Videojuego de temática cómica publicado en Itch.io.",
+      "details": "Proyecto desarrollado durante la Madrid Global Game Jam 2026 utilizando Unity. Mis principales responsabilidades fueron la implementación de la cámara y el movimiento del personaje, así como el desarrollo del HUD."
     },
 
     "GGTrack": {
       "title": "GGTrack",
-      "description": "Sistema de valoraciones de videojuegos",
-      "details": "Aplicación web con gestión de usuarios, valoraciones, gestión de listas de deseos."
+      "description": "Aplicación web para valorar y gestionar videojuegos.",
+      "details": "Aplicación web centrada en la gestión de usuarios, valoración de videojuegos y creación y gestión de listas de deseos."    
     }
   },
 
@@ -108,7 +108,11 @@
       "title": "Frameworks"
     },
 
-    "database": {
+    "engines":{
+      "title": "Motores de juegos"
+    },
+
+    "databases": {
       "title": "Bases de datos"
     },
 
@@ -124,8 +128,8 @@
   "contact": {
     "sectionNumber": "05.",
     "title": "Contacto",
-    "subtitle": "¿Tienes un proyecto o simplemente quieres contactar conmigo?",
-    "description": "Si quieres hablar sobre un proyecto, una oportunidad profesional o cualquier otra cuestión, puedes ponerte en contacto conmigo.",
+    "subtitle": "¿Quieres contactar conmigo?",
+    "description": "Puedes ponerte en contacto conmigo a través de los siguientes enlaces.",
 
     "form": {
       "name": "Nombre",
@@ -167,5 +171,10 @@
     "more": "Más información",
     "back": "Volver",
     "loading": "Cargando..."
+  },
+  "show":{
+    "github":"Ver código",
+    "steam": "Ver demo en Steam",
+    "demo": "Ver demo"
   }
 }

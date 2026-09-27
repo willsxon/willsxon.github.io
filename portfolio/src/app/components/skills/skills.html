@@ -5,6 +5,7 @@
     <h2>
       {{ 'skills.title' | translate }}
     </h2>
+
   </div>
 
   <div class="skills-grid">
@@ -60,6 +61,68 @@
 
             <span>
               {{ framework }}
+            </span>
+
+          </div>
+
+        }
+
+      </div>
+
+    </div>
+
+
+    <!-- DATABASES -->
+
+    <div class="skill-category">
+
+      <h3>
+        {{ 'skills.databases.title' | translate }}
+      </h3>
+
+      <div class="skill-list">
+
+        @for (database of databases; track database) {
+
+          <div class="skill-item">
+
+            <span class="skill-icon">
+              ◈
+            </span>
+
+            <span>
+              {{ database }}
+            </span>
+
+          </div>
+
+        }
+
+      </div>
+
+    </div>
+
+
+    <!-- MOTORES -->
+
+    <div class="skill-category">
+
+      <h3>
+        {{ 'skills.engines.title' | translate }}
+      </h3>
+
+      <div class="skill-list">
+
+        @for (engine of engines; track engine) {
+
+          <div class="skill-item">
+
+            <span class="skill-icon">
+              ◆
+            </span>
+
+            <span>
+              {{ engine }}
             </span>
 
           </div>
