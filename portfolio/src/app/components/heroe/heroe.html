@@ -1,0 +1,51 @@
+<section id="home" class="hero">
+  <div class="hero-container">
+
+    <div class="hero-content">
+
+      <p class="hero-greeting">
+        {{ 'hero.greeting' | translate }}
+      </p>
+
+      <h1>
+        {{ 'hero.name' | translate }}<span>.</span>
+      </h1>
+
+      <h2>
+        {{ 'hero.role' | translate }}
+      </h2>
+
+      <p class="hero-description">
+        {{ 'hero.description' | translate }}
+      </p>
+
+      <div class="hero-buttons">
+
+        <a
+          href="#portfolio"
+          class="btn btn-primary"
+        >
+          {{ 'hero.viewProjects' | translate }}
+        </a>
+
+        <a
+          href="#contact"
+          class="btn btn-secondary"
+        >
+          {{ 'hero.contactMe' | translate }}
+        </a>
+
+      </div>
+
+    </div>
+
+    <div class="hero-image-container">
+      <img
+        src="portrait.jpg"
+        [alt]="'hero.name' | translate"
+        class="hero-image"
+      />
+    </div>
+
+  </div>
+</section>

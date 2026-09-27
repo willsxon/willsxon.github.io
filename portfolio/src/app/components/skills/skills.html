@@ -1,0 +1,107 @@
+<section id="skills" class="section skills-section">
+
+  <div class="section-heading">
+    <span>{{ 'skills.sectionNumber' | translate }}</span>
+
+    <h2>
+      {{ 'skills.title' | translate }}
+    </h2>
+  </div>
+
+  <div class="skills-grid">
+
+    <!-- LENGUAJES -->
+
+    <div class="skill-category">
+
+      <h3>
+        {{ 'skills.languages.title' | translate }}
+      </h3>
+
+      <div class="skill-list">
+
+        @for (language of languages; track language) {
+
+          <div class="skill-item">
+
+            <span class="skill-icon">
+              &lt;/&gt;
+            </span>
+
+            <span>
+              {{ language }}
+            </span>
+
+          </div>
+
+        }
+
+      </div>
+
+    </div>
+
+
+    <!-- FRAMEWORKS -->
+
+    <div class="skill-category">
+
+      <h3>
+        {{ 'skills.frameworks.title' | translate }}
+      </h3>
+
+      <div class="skill-list">
+
+        @for (framework of frameworks; track framework) {
+
+          <div class="skill-item">
+
+            <span class="skill-icon">
+              ◆
+            </span>
+
+            <span>
+              {{ framework }}
+            </span>
+
+          </div>
+
+        }
+
+      </div>
+
+    </div>
+
+
+    <!-- HERRAMIENTAS -->
+
+    <div class="skill-category">
+
+      <h3>
+        {{ 'skills.tools.title' | translate }}
+      </h3>
+
+      <div class="skill-list">
+
+        @for (tool of tools; track tool) {
+
+          <div class="skill-item">
+
+            <span class="skill-icon">
+              ⚙
+            </span>
+
+            <span>
+              {{ tool }}
+            </span>
+
+          </div>
+
+        }
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>

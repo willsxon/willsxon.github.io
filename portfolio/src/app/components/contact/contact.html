@@ -1,0 +1,104 @@
+<section id="contact" class="section contact-section">
+
+  <div class="section-heading">
+    <span>{{ 'contact.sectionNumber' | translate }}</span>
+
+    <h2>
+      {{ 'contact.title' | translate }}
+    </h2>
+  </div>
+
+  <div class="contact-content">
+
+    <div class="contact-intro">
+
+      <h3>
+        {{ 'contact.subtitle' | translate }}
+      </h3>
+
+      <p>
+        {{ 'contact.description' | translate }}
+      </p>
+
+    </div>
+
+    <div class="contact-links">
+
+      <!-- WHATSAPP -->
+
+      <a
+        class="contact-card"
+        [href]="'https://wa.me/' + whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="contact-icon">
+          W
+        </div>
+
+        <div>
+          <span>
+            WhatsApp
+          </span>
+
+          <strong>
+            {{ 'contact.whatsapp.action' | translate }}
+          </strong>
+        </div>
+
+      </a>
+
+
+      <!-- EMAIL -->
+
+      <a
+        class="contact-card"
+        [href]="'mailto:' + email"
+      >
+
+        <div class="contact-icon">
+          @
+        </div>
+
+        <div>
+          <span>
+            {{ 'contact.information.email' | translate }}
+          </span>
+
+          <strong>{{ email }}</strong>
+        </div>
+
+      </a>
+
+
+      <!-- LINKEDIN -->
+
+      <a
+        class="contact-card"
+        [href]="linkedin"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+
+        <div class="contact-icon">
+          in
+        </div>
+
+        <div>
+          <span>
+            {{ 'contact.information.linkedin' | translate }}
+          </span>
+
+          <strong>
+            {{ 'contact.linkedin.action' | translate }}
+          </strong>
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
