@@ -20,19 +20,26 @@ export class Skills {
 
   frameworks = [
     'Angular',
-    '.NET Framework',
-    'Unreal Engine',
-    'Unity'
+    'ASP.NET Core',
+    'Azure Functions'
   ];
+
+  databases = [
+    'SQL Server'
+  ]
 
   tools = [
     'Git',
     'GitHub',
     'Docker',
     'Perforce',
-    'SQLServer',
     'Postman',
     'AzureDevOps',
     'Terraform'
   ];
+
+  engines = [
+    'Unreal Engine',
+    'Unity'
+  ]
 }

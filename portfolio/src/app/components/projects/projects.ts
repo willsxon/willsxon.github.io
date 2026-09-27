@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, signal } from '@angular/core';
 import { TranslatePipe } from '@ngx-translate/core';
 
 
@@ -15,8 +15,12 @@ interface Project {
   technologies: string[];
 
   github?: string;
+  githubLabel?: string;
   demo?: string;
+  demoLabel?: string;
 }
+
+
 
 @Component({
   imports: [TranslatePipe],
@@ -37,7 +41,8 @@ export class Projects {
 
       images: [
         'gameplay/gameplay1.png',
-        'gameplay/gameplay2.png'
+        'gameplay/gameplay2.png',
+        'gameplay/gameplay3.png'
       ],
 
       video: 'gameplay/videoGameplay.mov',
@@ -47,7 +52,8 @@ export class Projects {
         'Jenkins'
       ],
 
-      demo: 'https://store.steampowered.com/app/4551090/Unwoven/'
+      demo: 'https://store.steampowered.com/app/4551090/Unwoven/',
+      demoLabel: 'show.steam'
     },
 
     {
@@ -57,7 +63,10 @@ export class Projects {
       details:
         '',
 
-      images: [],
+      images: [
+        'gameplay/ggTrack1.png',
+        'gameplay/ggTrack2.png',
+        'gameplay/ggTrack3.png'],
 
       technologies: [
         'Angular',
@@ -65,29 +74,35 @@ export class Projects {
         'REST API'
       ],
 
-      github: ''
+      github: 'https://github.com/Willsy12/TFG',
+      githubLabel: 'show.github'
     },
     {
-      id: 'ElonMusk',
-      title: 'ElonMusk',
+      id: 'emusk',
+      title: 'emusk',
       description: '',
       details:
         '',
 
-      images: [],
+      images: [
+        'gameplay/e_mask1.png',
+        'gameplay/e_mask2.png',
+        'gameplay/e_mask3.png'],
 
       technologies: [
         'Unity'
       ],
 
       demo: 'https://davidperuchoconde.itch.io/e-mask',
-      video: 'assets/projects/ecommerce.mp4'
+      video: 'gameplay/e_mask.mov',
+      demoLabel: 'show.demo'
     }
 
   ];
 
   currentImage: number[] = [];
 
+  selectedImage = signal<string | null>(null);
   constructor() {
     this.currentImage = this.projects.map(() => 0);
   }
@@ -117,5 +132,13 @@ export class Projects {
 
   selectImage(projectIndex: number, imageIndex: number): void {
     this.currentImage[projectIndex] = imageIndex;
+  }
+
+  openImage(image: string): void {
+    this.selectedImage.set(image);
+  }
+
+  closeImage(): void {
+    this.selectedImage.set(null);
   }
 }
