@@ -1,0 +1,173 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "about": "Sobre mí",
+    "portfolio": "Portfolio",
+    "education": "Educación",
+    "skills": "Skills",
+    "contact": "Contacto"
+  },
+
+  "language": {
+    "spanish": "Español",
+    "english": "Inglés",
+    "change": "Cambiar idioma"
+  },
+
+  "hero": {
+    "greeting": "Hola, soy",
+    "name": "Willsxon",
+    "role": "Software Developer",
+    "description": "Desarrollador de software apasionado por crear aplicaciones modernas, eficientes y escalables.",
+    "viewProjects": "Ver proyectos",
+    "contactMe": "Contactar conmigo",
+    "scrollDown": "Desplazarse hacia abajo"
+  },
+
+  "about": {
+    "sectionNumber": "01.",
+    "title": "Sobre mí",
+    "intro": "Soy un desarrollador de software apasionado por la tecnología y el desarrollo de aplicaciones.",
+    "description": "Me gusta transformar ideas en soluciones digitales funcionales, intuitivas y bien estructuradas. Disfruto aprendiendo nuevas tecnologías y mejorando continuamente mis habilidades.",
+    "description2": "Actualmente trabajo en proyectos relacionados con el desarrollo web y de software, prestando especial atención a la calidad del código, la experiencia de usuario y las buenas prácticas.",
+    "age": "25 años",
+    "location": "Madrid, España",
+    "company": "Nombre de empresa",
+    "position": "Software Developer",
+    "information": {
+      "age": "Edad",
+      "location": "Ubicación",
+      "company": "Empresa",
+      "position": "Puesto"
+    }
+  },
+
+  "portfolio": {
+    "sectionNumber": "02.",
+    "title": "Portfolio",
+    "subtitle": "Algunos de los proyectos en los que he trabajado.",
+    "previousImage": "Imagen anterior",
+    "nextImage": "Imagen siguiente",
+    "image": "Imagen",
+    "noImage": "Sin imagen",
+    "videoUnsupported": "Tu navegador no soporta vídeos.",
+    "github": "GitHub",
+    "demo": "Demo",
+    "viewProject": "Ver proyecto",
+
+    "ecommerce": {
+      "title": "E-commerce",
+      "description": "Tienda online desarrollada con Angular.",
+      "details": "Desarrollo del frontend, autenticación, gestión de productos e integración con una API REST."
+    },
+
+    "taskManager": {
+      "title": "Task Manager",
+      "description": "Aplicación para gestionar tareas y proyectos.",
+      "details": "Backend desarrollado con Spring Boot y conexión con una base de datos MySQL."
+    },
+
+    "booking": {
+      "title": "Booking System",
+      "description": "Sistema de reservas para gestionar citas y disponibilidad.",
+      "details": "Aplicación web con gestión de usuarios, reservas, disponibilidad e integración entre frontend y backend."
+    }
+  },
+
+  "education": {
+    "sectionNumber": "03.",
+    "title": "Educación",
+    "subtitle": "Mi formación académica y profesional.",
+
+    "items": {
+      "degree": {
+        "title": "Grado en Desarrollo de Aplicaciones",
+        "institution": "Nombre del centro educativo",
+        "period": "2020 - 2022",
+        "description": "Formación centrada en el desarrollo de aplicaciones web y multiplataforma, bases de datos, programación y metodologías de desarrollo de software."
+      },
+
+      "course": {
+        "title": "Curso de Desarrollo Web",
+        "institution": "Nombre de la institución",
+        "period": "2022",
+        "description": "Formación especializada en tecnologías web, frontend, backend y desarrollo de aplicaciones modernas."
+      },
+
+      "certification": {
+        "title": "Certificación / Curso",
+        "institution": "Nombre de la institución",
+        "period": "2023",
+        "description": "Formación complementaria orientada a mejorar mis conocimientos y habilidades técnicas."
+      }
+    }
+  },
+
+  "skills": {
+    "sectionNumber": "04.",
+    "title": "Skills",
+    "subtitle": "Tecnologías y herramientas con las que trabajo.",
+
+    "frontend": {
+      "title": "Frontend"
+    },
+
+    "backend": {
+      "title": "Backend"
+    },
+
+    "database": {
+      "title": "Bases de datos"
+    },
+
+    "tools": {
+      "title": "Herramientas"
+    },
+
+    "other": {
+      "title": "Otros"
+    }
+  },
+
+  "contact": {
+    "sectionNumber": "05.",
+    "title": "Contacto",
+    "subtitle": "¿Tienes un proyecto o simplemente quieres contactar conmigo?",
+    "description": "Si quieres hablar sobre un proyecto, una oportunidad profesional o cualquier otra cuestión, puedes ponerte en contacto conmigo.",
+
+    "form": {
+      "name": "Nombre",
+      "namePlaceholder": "Tu nombre",
+      "email": "Email",
+      "emailPlaceholder": "tu@email.com",
+      "subject": "Asunto",
+      "subjectPlaceholder": "Asunto del mensaje",
+      "message": "Mensaje",
+      "messagePlaceholder": "Escribe tu mensaje...",
+      "send": "Enviar mensaje",
+      "sending": "Enviando...",
+      "success": "¡Mensaje enviado correctamente!",
+      "error": "Ha ocurrido un error. Inténtalo de nuevo."
+    },
+
+    "information": {
+      "email": "Email",
+      "location": "Ubicación",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    }
+  },
+
+  "footer": {
+    "copyright": "© 2026 Willsxon. Todos los derechos reservados.",
+    "madeWith": "Diseñado y desarrollado con Angular."
+  },
+
+  "common": {
+    "close": "Cerrar",
+    "open": "Abrir",
+    "more": "Más información",
+    "back": "Volver",
+    "loading": "Cargando..."
+  }
+}

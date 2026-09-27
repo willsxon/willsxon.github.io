@@ -1,0 +1,169 @@
+<header class="navbar">
+
+  <div class="nav-container">
+
+    <!-- LOGO -->
+
+    <a
+      href="#home"
+      class="logo"
+      (click)="closeMenu()"
+    >
+      &lt; Willsxon /&gt;
+    </a>
+
+
+    <!-- DESKTOP NAV -->
+
+    <nav
+      class="desktop-nav"
+      [attr.aria-label]="'nav.mainNavigation' | translate"
+    >
+
+      <a href="#about">
+        {{ 'nav.about' | translate }}
+      </a>
+
+      <a href="#portfolio">
+        {{ 'nav.portfolio' | translate }}
+      </a>
+
+      <a href="#education">
+        {{ 'nav.education' | translate }}
+      </a>
+
+      <a href="#skills">
+        {{ 'nav.skills' | translate }}
+      </a>
+
+      <a href="#contact">
+        {{ 'nav.contact' | translate }}
+      </a>
+
+    </nav>
+
+
+    <!-- LANGUAGE SWITCHER -->
+
+    <div
+      class="language-switcher"
+      [attr.aria-label]="'language.change' | translate"
+    >
+
+      <button
+        type="button"
+        [class.active]="currentLanguage() === 'es'"
+        (click)="changeLanguage('es')"
+      >
+        ES
+      </button>
+
+      <span>/</span>
+
+      <button
+        type="button"
+        [class.active]="currentLanguage() === 'en'"
+        (click)="changeLanguage('en')"
+      >
+        EN
+      </button>
+
+    </div>
+
+
+    <!-- MOBILE MENU BUTTON -->
+
+    <button
+      class="menu-button"
+      type="button"
+      (click)="toggleMenu()"
+      [attr.aria-expanded]="menuOpen()"
+      [attr.aria-label]="'nav.toggleNavigation' | translate"
+    >
+
+      <span></span>
+      <span></span>
+      <span></span>
+
+    </button>
+
+  </div>
+
+
+  <!-- MOBILE NAV -->
+
+  @if (menuOpen()) {
+
+    <nav
+      class="mobile-nav"
+      [attr.aria-label]="'nav.mainNavigation' | translate"
+    >
+
+      <a
+        href="#about"
+        (click)="closeMenu()"
+      >
+        {{ 'nav.about' | translate }}
+      </a>
+
+      <a
+        href="#portfolio"
+        (click)="closeMenu()"
+      >
+        {{ 'nav.portfolio' | translate }}
+      </a>
+
+      <a
+        href="#education"
+        (click)="closeMenu()"
+      >
+        {{ 'nav.education' | translate }}
+      </a>
+
+      <a
+        href="#skills"
+        (click)="closeMenu()"
+      >
+        {{ 'nav.skills' | translate }}
+      </a>
+
+      <a
+        href="#contact"
+        (click)="closeMenu()"
+      >
+        {{ 'nav.contact' | translate }}
+      </a>
+
+
+      <!-- MOBILE LANGUAGE -->
+
+      <div
+        class="mobile-language"
+        [attr.aria-label]="'language.change' | translate"
+      >
+
+        <button
+          type="button"
+          [class.active]="currentLanguage() === 'es'"
+          (click)="changeLanguage('es')"
+        >
+          ES
+        </button>
+
+        <span>/</span>
+
+        <button
+          type="button"
+          [class.active]="currentLanguage() === 'en'"
+          (click)="changeLanguage('en')"
+        >
+          EN
+        </button>
+
+      </div>
+
+    </nav>
+
+  }
+
+</header>
