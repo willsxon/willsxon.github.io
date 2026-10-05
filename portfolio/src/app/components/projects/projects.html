@@ -163,7 +163,22 @@
 
         </div>
 
+        @if (project.download) {
 
+          <div class="project-download">
+
+            <a
+              [href]="project.download"
+              download
+              class="project-download-link"
+            >
+              <span class="project-download-icon">↓</span>
+              <span>{{ 'show.download' | translate }}</span>
+            </a>
+
+          </div>
+
+        }
         <!-- VIDEO -->
 
         @if (project.video) {

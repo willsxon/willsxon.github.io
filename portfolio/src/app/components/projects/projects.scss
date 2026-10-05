@@ -277,6 +277,50 @@
   background: #09090b;
 }
 
+/* =========================
+   DESCARGA
+   ========================= */
+
+.project-download {
+  margin: 20px 30px 0;
+}
+
+.project-download-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 14px;
+
+  border: 1px solid rgba(139, 92, 246, 0.35);
+  border-radius: 8px;
+
+  color: #7c3aed;
+  background: rgba(139, 92, 246, 0.08);
+
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition:
+    background 0.2s ease,
+    border-color 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
+}
+
+.project-download-link:hover {
+  color: #6d28d9;
+  background: rgba(139, 92, 246, 0.15);
+  border-color: rgba(139, 92, 246, 0.6);
+  transform: translateY(-2px);
+}
+
+.project-download-icon {
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1;
+}
+
 
 /* =========================
    RESPONSIVE

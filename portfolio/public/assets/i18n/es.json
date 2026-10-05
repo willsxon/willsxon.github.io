@@ -175,6 +175,7 @@
   "show":{
     "github":"Ver código",
     "steam": "Ver demo en Steam",
-    "demo": "Ver demo"
+    "demo": "Ver demo",
+    "download": "Descargar demo"
   }
 }

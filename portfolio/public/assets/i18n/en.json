@@ -188,6 +188,7 @@
 "show": {
   "github": "View source code",
   "steam": "View demo on Steam",
-  "demo": "View demo"
+  "demo": "View demo",
+  "download": "Download demo"
 }
 }

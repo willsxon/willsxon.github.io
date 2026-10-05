@@ -18,6 +18,7 @@ interface Project {
   githubLabel?: string;
   demo?: string;
   demoLabel?: string;
+  download?: string;
 }
 
 
@@ -53,7 +54,8 @@ export class Projects {
       ],
 
       demo: 'https://store.steampowered.com/app/4551090/Unwoven/',
-      demoLabel: 'show.steam'
+      demoLabel: 'show.steam',
+      download: 'gameplay/UnwovenDemo.zip'
     },
 
     {
