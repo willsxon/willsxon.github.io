@@ -10,6 +10,8 @@ import { TranslatePipe } from '@ngx-translate/core';
 export class About {
   age = 25;
 
+  height = 2;
+
   location = 'Madrid, España';
 
   company = 'Nombre de empresa';
