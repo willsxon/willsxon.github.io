@@ -383,3 +383,33 @@
   }
 
 }
+
+
+.project-contributions {
+  margin-top: 1.5rem;
+}
+
+.project-contributions h4 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.project-contributions ul {
+  padding-left: 1.25rem;
+  margin: 0;
+}
+
+.project-contributions li {
+  margin-bottom: 0.5rem;
+  line-height: 1.6;
+}
+
+.project-contributions li::marker {
+  color: var(--accent-color);
+}
+
+.section-subtitle {
+  margin-top: 0.75rem;
+  opacity: 0.8;
+}

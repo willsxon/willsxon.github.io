@@ -57,28 +57,6 @@ export class Projects {
       demoLabel: 'show.steam',
       download: 'gameplay/UnwovenDemo.zip'
     },
-
-    {
-      id: 'GGTrack',
-      title: 'GGTrack',
-      description: '',
-      details:
-        '',
-
-      images: [
-        'gameplay/ggTrack1.png',
-        'gameplay/ggTrack2.png',
-        'gameplay/ggTrack3.png'],
-
-      technologies: [
-        'Angular',
-        'Django',
-        'REST API'
-      ],
-
-      github: 'https://github.com/Willsy12/TFG',
-      githubLabel: 'show.github'
-    },
     {
       id: 'emusk',
       title: 'emusk',

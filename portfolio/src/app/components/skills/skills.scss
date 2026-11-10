@@ -1,85 +1,222 @@
+
+/* ==============================
+   SKILLS SECTION
+============================== */
+
 .skills-section {
   background: #fafafa;
 }
 
-.skills-grid {
-  display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 20px;
+.section-subtitle {
+  margin-top: 0.75rem;
+  color: #71717a;
+  font-size: 15px;
 }
 
+
+/* ==============================
+   GRID
+============================== */
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+
+/* ==============================
+   CATEGORY CARDS
+============================== */
+
 .skill-category {
-  padding: 30px;
-
+  position: relative;
+  padding: 28px;
   border: 1px solid #e4e4e7;
-  border-radius: 12px;
+  border-radius: 14px;
+  background: #ffffff;
 
-  background: white;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    border-color 0.25s ease;
+}
+
+.skill-category:hover {
+  transform: translateY(-4px);
+  border-color: #c4b5fd;
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.08);
 }
 
 .skill-category h3 {
-  margin: 0 0 25px;
+  margin: 0 0 24px;
+  padding-bottom: 14px;
 
   color: #18181b;
+  font-size: 19px;
+  font-weight: 700;
 
-  font-size: 20px;
+  border-bottom: 1px solid #eeeef0;
 }
+
+
+/* ==============================
+   SKILL LIST
+============================== */
 
 .skill-list {
   display: flex;
   flex-direction: column;
-
-  gap: 10px;
+  gap: 12px;
 }
+
+
+/* ==============================
+   INDIVIDUAL SKILL
+============================== */
 
 .skill-item {
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
 
-  gap: 12px;
+  padding: 14px;
 
-  padding: 12px;
-
-  border-radius: 7px;
+  border: 1px solid transparent;
+  border-radius: 10px;
 
   background: #fafafa;
-
   color: #52525b;
 
-  font-size: 14px;
-
   transition:
-    background 0.2s ease,
+    background-color 0.2s ease,
+    border-color 0.2s ease,
     transform 0.2s ease;
 }
 
 .skill-item:hover {
-  background: #f4f4f5;
+  background: #f5f3ff;
+  border-color: #ddd6fe;
+  transform: translateX(3px);
+}
 
-  transform: translateX(4px);
+
+/* ==============================
+   SKILL HEADER
+============================== */
+
+.skill-item-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
 }
 
 .skill-icon {
-  width: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  color: #8b5cf6;
+  flex-shrink: 0;
+  width: 30px;
+  height: 30px;
+
+  border-radius: 8px;
+
+  background: #ede9fe;
+  color: #7c3aed;
 
   font-family: monospace;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.skill-name {
+  color: #27272a;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+
+/* ==============================
+   LEVEL BADGE
+============================== */
+
+.skill-level {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+
+  margin-left: auto;
+  flex-shrink: 0;
+
+  padding: 5px 10px;
+
+  border: 1px solid #ddd6fe;
+  border-radius: 20px;
+
+  background: #ede9fe;
+  color: #6d28d9;
+
+  font-size: 11px;
   font-weight: 700;
 
-  text-align: center;
+  white-space: nowrap;
 }
 
-@media (max-width: 850px) {
+.skill-level::before {
+  content: "";
+  width: 6px;
+  height: 6px;
+
+  border-radius: 50%;
+  background: #8b5cf6;
+}
+
+
+/* ==============================
+   SKILL EVIDENCE
+============================== */
+
+.skill-evidence {
+  margin: 0 0 0 40px;
+
+  color: #71717a;
+  font-size: 12px;
+  line-height: 1.6;
+}
+
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 1000px) {
+
   .skills-grid {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
   }
+
 }
 
-@media (max-width: 550px) {
+@media (max-width: 600px) {
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
+  .skill-category {
+    padding: 22px;
+  }
+
+  .skill-level {
+    font-size: 10px;
+    padding: 4px 8px;
+  }
+
+  .skill-name {
+    font-size: 13px;
+  }
+
 }

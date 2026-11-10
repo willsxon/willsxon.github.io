@@ -1,194 +1,212 @@
+
 {
-"nav": {
-"home": "Home",
-"about": "About me",
-"portfolio": "Portfolio",
-"education": "Education",
-"skills": "Skills",
-"contact": "Contact"
-},
-
-"language": {
-"spanish": "Spanish",
-"english": "English",
-"change": "Change language"
-},
-
-"hero": {
-"greeting": "Hi, I'm",
-"name": "Wilson",
-"role": "Software Developer",
-"description": "Software developer passionate about creating applications and video games.",
-"viewProjects": "View projects",
-"contactMe": "Contact me",
-"scrollDown": "Scroll down"
-},
-
-"about": {
-"sectionNumber": "01.",
-"title": "About me",
-"intro": "My name is Wilson Javier Simbaña Ganazhapa. I am a software developer passionate about video game development and web applications.",
-"description": "I consider myself a curious person who enjoys understanding how things work and taking on new challenges.",
-"description2": "I currently work on web and software development projects using technologies such as Angular and .NET. In addition to web development, I have worked on video game projects using engines such as Unreal Engine and Unity, experiences that have allowed me to develop a more creative and different perspective on programming.",
-"age": "24 years old",
-"location": "Madrid, Spain",
-"company": "Company name",
-"position": "IT Consultant",
-"information": {
-"age": "Age",
-"location": "Location",
-"company": "Company",
-"position": "Position"
-}
-},
-
-"portfolio": {
-"sectionNumber": "02.",
-"title": "Portfolio",
-"subtitle": "Some of the projects I have worked on.",
-"previousImage": "Previous image",
-"nextImage": "Next image",
-"image": "Image",
-"noImage": "No image",
-"videoUnsupported": "Your browser does not support videos.",
-"github": "GitHub",
-"demo": "Demo",
-"viewProject": "View project",
-
-
-"Unwoven": {
-  "title": "Unwoven",
-  "description": "Action twin-stick shooter published on Steam.",
-  "details": "Master's thesis project developed in Unreal Engine. My main responsibilities included automating the game executable generation process, implementing character abilities and movement, developing the animation system, creating a circular shader, and optimizing resources."
-},
-
-"emusk": {
-  "title": "E-mask",
-  "description": "Comedy-themed video game published on itch.io.",
-  "details": "Project developed during the Madrid Global Game Jam 2026 using Unity. My main responsibilities included implementing the camera and character movement, as well as developing the HUD."
-},
-
-"GGTrack": {
-  "title": "GGTrack",
-  "description": "Web application for rating and managing video games.",
-  "details": "Web application focused on user management, video game ratings, and creating and managing wishlists."
-}
-
-
-},
-
-"education": {
-"sectionNumber": "03.",
-"title": "Education",
-"subtitle": "My academic and professional background.",
-
-
-"items": {
-  "degree": {
-    "title": "Bachelor's Degree in Computer Engineering",
-    "institution": "Autonomous University of Madrid",
-    "period": "2020 - 2025",
-    "description": "Degree focused on web application development, databases, programming, and software development methodologies."
+  "nav": {
+    "home": "Home",
+    "about": "About me",
+    "portfolio": "Projects",
+    "education": "Education",
+    "skills": "Skills",
+    "contact": "Contact"
   },
 
-  "course": {
-    "title": "Master's Degree in Video Game Development",
-    "institution": "Complutense University of Madrid",
-    "period": "2025 - 2026",
-    "description": "Master's degree specializing in video game development using both Unity and Unreal Engine."
+  "language": {
+    "spanish": "Spanish",
+    "english": "English",
+    "change": "Change language"
+  },
+
+  "hero": {
+    "greeting": "Hi, I'm",
+    "name": "Wilson",
+    "role": "Game Programmer",
+    "description": "Game programmer with a degree in Computer Engineering and a Master's degree in Game Development. I have contributed to projects using Unreal Engine 5 and Unity.",
+    "viewProjects": "View projects",
+    "contactMe": "Contact me",
+    "scrollDown": "Scroll down",
+    "downloadCV": "Download CV",
+    "portraitAlt": "Portrait of Wilson"
+  },
+
+  "about": {
+    "sectionNumber": "01.",
+    "title": "About me",
+    "intro": "I'm Wilson Javier Simbaña Ganazhapa, a game programmer with a background in Computer Engineering and a Master's degree in Game Development.",
+    "description": "I am particularly interested in gameplay programming and the development of interactive systems. I have worked with Unreal Engine 5, implementing ability systems using the Gameplay Ability System (GAS), animation systems, build automation tools, and shaders. I have also developed features in Unity, including character movement, camera systems, and HUD interfaces.",
+    "description2": "Additionally, my experience in software development using technologies such as Angular and .NET has allowed me to expand my programming knowledge and understanding of application architecture.",
+    "location": "Madrid, Spain",
+    "specialty": "Gameplay Programming",
+    "engines": "Unreal Engine 5 · Unity",
+    "information": {
+      "location": "Location",
+      "specialty": "Specialization",
+      "engines": "Game Engines",
+      "position": "Current Position",
+      "age":"age"
+    },
+    "age": "24 years old",
+    "position": "IT Consultant"
+  },
+
+  "portfolio": {
+    "sectionNumber": "02.",
+    "title": "Projects",
+    "subtitle": "Game development projects I have worked on.",
+
+    "previousImage": "Previous image",
+    "nextImage": "Next image",
+    "image": "Image",
+    "noImage": "No image available",
+    "videoUnsupported": "Your browser does not support video playback.",
+
+    "github": "GitHub",
+    "demo": "Demo",
+    "viewProject": "View project",
+    "contributionTitle": "My Contributions",
+
+    "Unwoven": {
+      "title": "Unwoven",
+
+      "description": "Action twin-stick shooter developed in Unreal Engine 5 and published on Steam.",
+
+      "details": "Master's degree final project focused on the development of an action game in the twin-stick shooter genre.",
+
+      "contributions": [
+        "Automated the executable build generation process.",
+        "Implemented character movement and abilities.",
+        "Developed the animation system.",
+        "Created a circular shader.",
+        "Optimized game resources."
+      ]
+    },
+
+    "emusk": {
+      "title": "E-mask",
+
+      "description": "Comedy-themed video game developed in Unity and published on itch.io.",
+
+      "details": "Project developed during Madrid Global Game Jam 2026.",
+
+      "contributions": [
+        "Implemented the camera system.",
+        "Programmed character movement.",
+        "Developed and implemented the HUD."
+      ]
+    }
+  },
+
+  "education": {
+    "sectionNumber": "03.",
+    "title": "Education",
+    "subtitle": "My academic and professional background.",
+
+    "items": {
+      "degree": {
+        "title": "Bachelor's Degree in Computer Engineering",
+        "institution": "Autonomous University of Madrid",
+        "period": "2020 - 2025",
+        "description": "Degree focused on web application development, databases, programming, and software development methodologies."
+      },
+
+      "course": {
+        "title": "Master's Degree in Game Development",
+        "institution": "Complutense University of Madrid",
+        "period": "2025 - 2026",
+        "description": "Specialized program in video game development using both Unity and Unreal Engine."
+      }
+    }
+  },
+
+  "skills": {
+    "title": "Technical Skills",
+    "subtitle": "Technologies, tools, and skills demonstrated in my projects.",
+
+    "engines": {
+      "title": "Game Engines"
+    },
+
+    "languages": {
+      "title": "Programming Languages"
+    },
+
+    "gameplay": {
+      "title": "Game Programming"
+    },
+
+    "tools": {
+      "title": "Tools and Version Control"
+    },
+
+    "software": {
+      "title": "Additional Software Development"
+    },
+
+    "levels": {
+      "basic": "Basic",
+      "intermediate": "Intermediate",
+      "advanced": "Advanced",
+      "specialized": "Specialized"
+    },
+
+    "evidence": {
+      "unreal": "Gameplay, character movement, abilities, animations, shaders, and optimization in Unwoven.",
+      "unity": "Camera system, character movement, and HUD interface in E-mask."
+    }
+  },
+
+  "contact": {
+    "sectionNumber": "05.",
+    "title": "Contact",
+    "subtitle": "Want to get in touch?",
+    "description": "Feel free to contact me through any of the following channels.",
+
+    "form": {
+      "name": "Name",
+      "namePlaceholder": "Your name",
+      "email": "Email",
+      "emailPlaceholder": "your@email.com",
+      "subject": "Subject",
+      "subjectPlaceholder": "Message subject",
+      "message": "Message",
+      "messagePlaceholder": "Write your message...",
+      "send": "Send message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "error": "Something went wrong. Please try again."
+    },
+
+    "information": {
+      "email": "Email",
+      "location": "Location",
+      "github": "GitHub",
+      "linkedin": "LinkedIn"
+    },
+
+    "linkedin": {
+      "action": "Wilson Javier Simbaña Ganazhapa"
+    },
+
+    "whatsapp": {
+      "action": "Chat"
+    }
+  },
+
+  "footer": {
+    "copyright": "© 2026 Willsxon. All rights reserved.",
+    "madeWith": "Designed and developed with Angular."
+  },
+
+  "common": {
+    "close": "Close",
+    "open": "Open",
+    "more": "More information",
+    "back": "Back",
+    "loading": "Loading..."
+  },
+
+  "show": {
+    "github": "View source code",
+    "steam": "View demo on Steam",
+    "demo": "View demo",
+    "download": "Download demo"
   }
-}
-
-
-},
-
-"skills": {
-"sectionNumber": "04.",
-"title": "Skills",
-"subtitle": "Technologies and tools I work with.",
-
-
-"languages": {
-  "title": "Programming Languages"
-},
-
-"frameworks": {
-  "title": "Frameworks"
-},
-
-"engines": {
-  "title": "Game Engines"
-},
-
-"databases": {
-  "title": "Databases"
-},
-
-"tools": {
-  "title": "Tools"
-},
-
-"other": {
-  "title": "Other"
-}
-
-},
-
-"contact": {
-"sectionNumber": "05.",
-"title": "Contact",
-"subtitle": "Would you like to get in touch?",
-"description": "You can get in touch with me through the following links.",
-
-"form": {
-  "name": "Name",
-  "namePlaceholder": "Your name",
-  "email": "Email",
-  "emailPlaceholder": "your@email.com",
-  "subject": "Subject",
-  "subjectPlaceholder": "Message subject",
-  "message": "Message",
-  "messagePlaceholder": "Write your message...",
-  "send": "Send message",
-  "sending": "Sending...",
-  "success": "Message sent successfully!",
-  "error": "Something went wrong. Please try again."
-},
-
-"information": {
-  "email": "Email",
-  "location": "Location",
-  "github": "GitHub",
-  "linkedin": "LinkedIn"
-},
-
-"linkedin": {
-  "action": "Wilson Javier Simbaña Ganazhapa"
-},
-
-"whatsapp": {
-  "action": "Chat"
-}
-
-
-},
-
-"footer": {
-"copyright": "© 2026 Willsxon. All rights reserved.",
-"madeWith": "Designed and developed with Angular."
-},
-
-"common": {
-"close": "Close",
-"open": "Open",
-"more": "More information",
-"back": "Back",
-"loading": "Loading..."
-},
-"show": {
-  "github": "View source code",
-  "steam": "View demo on Steam",
-  "demo": "View demo",
-  "download": "Download demo"
-}
 }

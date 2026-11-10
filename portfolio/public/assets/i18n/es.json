@@ -17,62 +17,82 @@
   "hero": {
     "greeting": "Hola, soy",
     "name": "Wilson",
-    "role": "Desarrollador de software",
-    "description": "Desarrollador de software apasionado por crear aplicaciones y videojuegos.",
+    "role": "Programador de videojuegos",
+    "description": "Programador de videojuegos con formación en Ingeniería Informática y máster en Desarrollo de Videojuegos. He participado en proyectos con Unreal Engine 5 y Unity.",
     "viewProjects": "Ver proyectos",
     "contactMe": "Contactar conmigo",
-    "scrollDown": "Desplazarse hacia abajo"
+    "scrollDown": "Desplazarse hacia abajo",
+    "downloadCV": "Descargar CV",
+    "portraitAlt": "Fotografía de Wilson"
   },
 
   "about": {
     "sectionNumber": "01.",
     "title": "Sobre mí",
-    "intro": "Me llamo Wilson Javier Simbaña Ganazhapa. Soy desarrollador de software apasionado por el desarrollo de videojuegos y aplicaciones web.",
-    "description": "Me considero una persona curiosa a la que le gusta entender cómo funcionan las cosas y enfrentarse a nuevos retos.",
-    "description2": "Actualmente trabajo en proyectos relacionados con el desarrollo web y de software utilizando tecnologías como Angular y .NET. Además del desarrollo web, he participado en proyectos de videojuegos utilizando motores como Unreal Engine y Unity, experiencias que me han permitido desarrollar una visión más creativa y diferente sobre la programación.",
-    "age": "24 años",
+    "intro": "Soy Wilson Javier Simbaña Ganazhapa, programador de videojuegos con formación en Ingeniería Informática y un Máster en Desarrollo de Videojuegos.",
+    "description": "Me interesa especialmente la programación de gameplay y el desarrollo de sistemas interactivos. He trabajado con Unreal Engine 5 implementando sistemas de habilidades mediante Gameplay Ability System (GAS), sistemas de animación, herramientas para automatizar la generación de ejecutables y shaders. También he desarrollado funcionalidades con Unity, como el movimiento de personajes, sistemas de cámara e interfaces HUD.",
+    "description2": "Además, mi experiencia en desarrollo de software con tecnologías como Angular y .NET me ha permitido adquirir conocimientos adicionales de programación y arquitectura de aplicaciones.",
     "location": "Madrid, España",
-    "company": "Nombre de empresa",
-    "position": "Consultor informático",
+    "specialty": "Gameplay Programming",
+    "engines": "Unreal Engine 5 · Unity",
     "information": {
-      "age": "Edad",
       "location": "Ubicación",
-      "company": "Empresa",
-      "position": "Puesto"
-    }
+      "specialty": "Especialidad",
+      "engines": "Motores de videojuegos",
+      "position":"Puesto actual",
+      "age":"edad"
+    },
+    "age":"24 años",
+    "position":"Consultor informático"
   },
 
   "portfolio": {
     "sectionNumber": "02.",
-    "title": "Portfolio",
-    "subtitle": "Algunos de los proyectos en los que he trabajado.",
+    "title": "Proyectos",
+    "subtitle": "Proyectos de desarrollo de videojuegos en los que he participado.",
+
     "previousImage": "Imagen anterior",
     "nextImage": "Imagen siguiente",
     "image": "Imagen",
     "noImage": "Sin imagen",
     "videoUnsupported": "Tu navegador no soporta vídeos.",
+
     "github": "GitHub",
     "demo": "Demo",
     "viewProject": "Ver proyecto",
+    "contributionTitle": "Mi contribución",
 
     "Unwoven": {
       "title": "Unwoven",
-      "description": "Twin-stick shooter de accion publicado en Steam",
-      "details": "Trabajo de fin de master, desarrollado en Unreal Engine. Mis principales responsabilidades fueron la automatización del proceso de generación de ejecutables, la implementación de las habilidades y el movimiento del personaje, el desarrollo del sistema de animaciones, la creación de un shader circular y la optimización de recursos."
+
+      "description": "Twin-stick shooter de acción desarrollado en Unreal Engine 5 y publicado en Steam.",
+
+      "details": "Proyecto desarrollado como Trabajo de Fin de Máster, centrado en la creación de un videojuego de acción del género twin-stick shooter.",
+
+      "contributions": [
+        "Automatización del proceso de generación de ejecutables.",
+        "Implementación del movimiento y las habilidades del personaje.",
+        "Desarrollo del sistema de animaciones.",
+        "Creación de un shader circular.",
+        "Optimización de recursos."
+      ]
     },
 
     "emusk": {
       "title": "E-mask",
-      "description": "Videojuego de temática cómica publicado en Itch.io.",
-      "details": "Proyecto desarrollado durante la Madrid Global Game Jam 2026 utilizando Unity. Mis principales responsabilidades fueron la implementación de la cámara y el movimiento del personaje, así como el desarrollo del HUD."
-    },
 
-    "GGTrack": {
-      "title": "GGTrack",
-      "description": "Aplicación web para valorar y gestionar videojuegos.",
-      "details": "Aplicación web centrada en la gestión de usuarios, valoración de videojuegos y creación y gestión de listas de deseos."    
+      "description": "Videojuego de temática cómica desarrollado en Unity y publicado en itch.io.",
+
+      "details": "Proyecto desarrollado durante la Madrid Global Game Jam 2026.",
+
+      "contributions": [
+        "Implementación del sistema de cámara.",
+        "Programación del movimiento del personaje.",
+        "Desarrollo e implementación del HUD."
+      ]
     }
   },
+
 
   "education": {
     "sectionNumber": "03.",
@@ -96,34 +116,44 @@
     }
   },
 
-  "skills": {
-    "sectionNumber": "04.",
-    "title": "Skills",
-    "subtitle": "Tecnologías y herramientas con las que trabajo.",
-    "languages":{
-      "title": "Lenguajes de programación"
-    },
+  
+"skills": {
+  "title": "Competencias técnicas",
+  "subtitle": "Tecnologías, herramientas y conocimientos aplicados en mis proyectos.",
 
-    "frameworks": {
-      "title": "Frameworks"
-    },
-
-    "engines":{
-      "title": "Motores de juegos"
-    },
-
-    "databases": {
-      "title": "Bases de datos"
-    },
-
-    "tools": {
-      "title": "Herramientas"
-    },
-
-    "other": {
-      "title": "Otros"
-    }
+  "engines": {
+    "title": "Motores de videojuegos"
   },
+
+  "languages": {
+    "title": "Lenguajes de programación"
+  },
+
+  "gameplay": {
+    "title": "Programación de videojuegos"
+  },
+
+  "tools": {
+    "title": "Herramientas y control de versiones"
+  },
+
+  "software": {
+    "title": "Desarrollo de software adicional"
+  },
+
+  "levels": {
+    "basic": "Básico",
+    "intermediate": "Intermedio",
+    "advanced": "Avanzado",
+    "specialized": "Especializado"
+  },
+
+  "evidence": {
+    "unreal": "Gameplay, movimiento, habilidades, animaciones, shaders y optimización en Unwoven.",
+    "unity": "Cámara, movimiento del personaje e interfaz HUD en E-mask."
+  }
+},
+
 
   "contact": {
     "sectionNumber": "05.",

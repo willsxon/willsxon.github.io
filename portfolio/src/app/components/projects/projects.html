@@ -5,6 +5,7 @@
     <h2>
       {{ 'portfolio.title' | translate }}
     </h2>
+
   </div>
 
   <div class="projects-grid">
@@ -21,8 +22,16 @@
 
             <img
               [src]="project.images[currentImage[i]]"
-              [alt]="('portfolio.' + project.id + '.title') | translate"
+              [alt]="
+                (('portfolio.' + project.id + '.title') | translate) +
+                ' - ' +
+                ('portfolio.image' | translate) +
+                ' ' +
+                (currentImage[i] + 1)
+              "
               class="project-image"
+              loading="lazy"
+              decoding="async"
             />
 
             @if (project.images.length > 1) {
@@ -38,7 +47,6 @@
                 ‹
               </button>
 
-
               <!-- Botón siguiente -->
 
               <button
@@ -49,7 +57,6 @@
               >
                 ›
               </button>
-
 
               <!-- Indicadores -->
 
@@ -71,6 +78,9 @@
                       ' ' +
                       (imageIndex + 1)
                     "
+                    [attr.aria-current]="
+                      currentImage[i] === imageIndex ? 'true' : null
+                    "
                   ></button>
 
                 }
@@ -89,7 +99,6 @@
 
         </div>
 
-
         <!-- CABECERA -->
 
         <div class="project-top">
@@ -101,6 +110,7 @@
           <div class="project-links">
 
             @if (project.github) {
+
               <a
                 [href]="project.github"
                 target="_blank"
@@ -111,9 +121,11 @@
                 <span>{{ project.githubLabel | translate }}</span>
                 <span class="project-link-arrow">↗</span>
               </a>
+
             }
 
             @if (project.demo) {
+
               <a
                 [href]="project.demo"
                 target="_blank"
@@ -124,14 +136,14 @@
                 <span>{{ project.demoLabel | translate }}</span>
                 <span class="project-link-arrow">↗</span>
               </a>
+
             }
 
           </div>
 
         </div>
 
-
-        <!-- INFORMACIÓN -->
+        <!-- INFORMACIÓN DEL PROYECTO -->
 
         <h3>
           {{ ('portfolio.' + project.id + '.title') | translate }}
@@ -145,6 +157,32 @@
           {{ ('portfolio.' + project.id + '.details') | translate }}
         </p>
 
+        <!-- MI CONTRIBUCIÓN -->
+
+        <div class="project-contributions project-description">
+
+          <h4 class="">
+            {{ 'portfolio.contributionTitle' | translate }}
+          </h4>
+
+          <ul>
+
+            @for (
+              contribution of (
+                ('portfolio.' + project.id + '.contributions') | translate
+              );
+              track $index
+            ) {
+
+              <li>
+                {{ contribution }}
+              </li>
+
+            }
+
+          </ul>
+
+        </div>
 
         <!-- TECNOLOGÍAS -->
 
@@ -163,6 +201,8 @@
 
         </div>
 
+        <!-- DESCARGA -->
+
         @if (project.download) {
 
           <div class="project-download">
@@ -179,7 +219,8 @@
           </div>
 
         }
-        <!-- VIDEO -->
+
+        <!-- VÍDEO -->
 
         @if (project.video) {
 
@@ -188,6 +229,7 @@
             <video
               controls
               preload="metadata"
+              playsinline
             >
 
               <source

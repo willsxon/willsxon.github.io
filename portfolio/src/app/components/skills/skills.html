@@ -1,3 +1,4 @@
+
 <section id="skills" class="section skills-section">
 
   <div class="section-heading">
@@ -10,159 +11,53 @@
 
   <div class="skills-grid">
 
-    <!-- LENGUAJES -->
+    @for (category of skillCategories; track category.id) {
 
-    <div class="skill-category">
+      <div class="skill-category">
 
-      <h3>
-        {{ 'skills.languages.title' | translate }}
-      </h3>
+        <h3>
+          {{ category.title | translate }}
+        </h3>
 
-      <div class="skill-list">
+        <div class="skill-list">
 
-        @for (language of languages; track language) {
+          @for (skill of category.items; track skill.name) {
 
-          <div class="skill-item">
+            <div class="skill-item">
 
-            <span class="skill-icon">
-              &lt;/&gt;
-            </span>
+              <div class="skill-item-header">
 
-            <span>
-              {{ language }}
-            </span>
+                <span class="skill-icon">
+                  &lt;/&gt;
+                </span>
 
-          </div>
+                <span class="skill-name">
+                  {{ skill.name }}
+                </span>
 
-        }
+                @if (skill.level) { 
+                  <span
+                    class="skill-level"
+                    [class.level-basic]="skill.level === 'skills.levels.basic'"
+                    [class.level-intermediate]="skill.level === 'skills.levels.intermediate'"
+                    [class.level-advanced]="skill.level === 'skills.levels.advanced'"
+                    [class.level-specialized]="skill.level === 'skills.levels.specialized'"
+                  >
+                    {{ skill.level | translate }}
+                  </span>
+                }
 
-      </div>
+              </div>
 
-    </div>
+            </div>
 
+          }
 
-    <!-- FRAMEWORKS -->
-
-    <div class="skill-category">
-
-      <h3>
-        {{ 'skills.frameworks.title' | translate }}
-      </h3>
-
-      <div class="skill-list">
-
-        @for (framework of frameworks; track framework) {
-
-          <div class="skill-item">
-
-            <span class="skill-icon">
-              ◆
-            </span>
-
-            <span>
-              {{ framework }}
-            </span>
-
-          </div>
-
-        }
+        </div>
 
       </div>
 
-    </div>
-
-
-    <!-- DATABASES -->
-
-    <div class="skill-category">
-
-      <h3>
-        {{ 'skills.databases.title' | translate }}
-      </h3>
-
-      <div class="skill-list">
-
-        @for (database of databases; track database) {
-
-          <div class="skill-item">
-
-            <span class="skill-icon">
-              ◈
-            </span>
-
-            <span>
-              {{ database }}
-            </span>
-
-          </div>
-
-        }
-
-      </div>
-
-    </div>
-
-
-    <!-- MOTORES -->
-
-    <div class="skill-category">
-
-      <h3>
-        {{ 'skills.engines.title' | translate }}
-      </h3>
-
-      <div class="skill-list">
-
-        @for (engine of engines; track engine) {
-
-          <div class="skill-item">
-
-            <span class="skill-icon">
-              ◆
-            </span>
-
-            <span>
-              {{ engine }}
-            </span>
-
-          </div>
-
-        }
-
-      </div>
-
-    </div>
-
-
-    <!-- HERRAMIENTAS -->
-
-    <div class="skill-category">
-
-      <h3>
-        {{ 'skills.tools.title' | translate }}
-      </h3>
-
-      <div class="skill-list">
-
-        @for (tool of tools; track tool) {
-
-          <div class="skill-item">
-
-            <span class="skill-icon">
-              ⚙
-            </span>
-
-            <span>
-              {{ tool }}
-            </span>
-
-          </div>
-
-        }
-
-      </div>
-
-    </div>
+    }
 
   </div>
 
